@@ -29,49 +29,109 @@
 		</nav>
 	</header>
 	<dl>
-		<dt></dt>
-			<dd></dd>
+		<dt>:viusage</dt>
+			<dd>Affiche un sommaire de toutes les commandes</dd>
 	</dl>
 	<div id="mv"><h3>Mouvements</h3>
 		<dl>
-			<dt></dt>
-				<dd></dd>
+			<dt>h, j, k, l</dt>
+				<dd>d'un caractère vers la gauche, le bas, le haut, la droite</dd>
+			<dt>b, w</dt>
+				<dd>d'un mot vers la gauche, la droite</dd>
+			<dt>ge, e</dt>
+				<dd>fin d'un mot à gauche, à droite</dd>
+			<dt>{, }</dt>
+				<dd>paragraphe précédent, suivant</dd>
+			<dt>(, )</dt>
+				<dd>phrase précédente, suivante</dd>
+			<dt>0, ^, $</dt>
+				<dd>début, premier, et dernier caracctère de la ligne</dd>
+			<dt>ng, nGG</dt>
+				<dd>ligne n, par défaut la dernière, première</dd>
 		</dl>
 	</div>
 	<div id="ins"><h3>Insertion et remplacement -> mode insertion</h3>
 		<dl>
-			<dt></dt>
-				<dd></dd>
+			<dt>i, a</dt>
+				<dd>insertion avant, après le curseur</dd>
+			<dt>I, A</dt>
+				<dd>insertion au début, à la fin de la ligne</dd>
+			<dt>o, O</dt>
+				<dd>ouvre une nouvelle ligne en dessous, au dessus de la ligne</dd>
+			<dt>r &ltchar&gt</dt>
+				<dd>remplace le caractère sous le curseur par &ltchar&gt</dd>
+			<dt>R</dt>
+				<dd>remplace les caractères en partant du curseur</dd>
 		</dl>
 	</div>
 	<div id="del"><h3>Suppression</h3>
 		<dl>
-			<dt></dt>
-				<dd></dd>
+			<dt>x, X</dt>
+				<dd>supprime le caractère sous, avant le curseur</dd>
+			<dt>dd, D</dt>
+				<dd>supprime la ligne actuelle, jusqu'à la fin de la ligne</dd>
+			<dt>J, gj</dt>
+				<dd>joint la ligne actuelle avec la suivante, sans espace</dd>
+			<dt>:rd</dt>
+				<dd>supprime la ligne r</dd>
+			<dt>:rdx</dt>
+				<dd>supprime les lignes r à x</dd>
 		</dl>
 	</div>
 	<div id="undo"><h3>Annuler et répéter</h3>
 		<dl>
-			<dt></dt>
+			<dt>u, U</dt>
+				<dd>annule la dernière commande, restaure la dernière ligne</dd>
+			<dt>., CTRL+R</dt>
+				<dd>répète les derniers changements, refait la dernière annulation</dd>
+			<dt>n. répète les derniers changements n fois</dt>
 				<dd></dd>
 		</dl>
 	</div>
 	<div id="copy"><h3>Copier</h3>
 		<dl>
-			<dt></dt>
-				<dd></dd>
+			<dt>y</dt>
+				<dd>copie les caractères sélectionnés en mode visuel (v)</dd>
+			<dt>yy, Y</dt>
+				<dd>copie la ligne entière</dd>
+			<dt>y$</dt>
+				<dd>copie jusqu'à la fin de la ligne</dd>
+			<dt>yw</dt>
+				<dd>copie le mot sous le curseur</dd>
+			<dt>d</dt>
+				<dd>coupe les caractères sélectionnés</dd>
+			<dt>p, P</dt>
+				<dd>colle après, avant le curseur</dd>
 		</dl>
 	</div>
 	<div id="scroll"><h3>Scrolling et multi-écrans</h3>
 		<dl>
-			<dt></dt>
-				<dd></dd>
+			<dt>CTRL+D, CTRL+U</dt>
+				<dd>défile d'une demi-page versle haut, le bas</dd>
+			<dt>CTRL+F, CTRL+B</dt>
+				<dd>défile d'une page vers le haut, le bas</dd>
+			<dt>zt, zz, zb</dt>
+				<dd>ligne actuelle en haut, au milieu, en bas de la fenêtre</dd>
+			<dt>zh, zl</dt>
+				<dd>défile d'un caractère vers la droite, la gauche</dd>
+			<dt>zH, zL</dt>
+				<dd>défile d'une moitié d'écran vers la droite, la gauche</dd>
+			<dt>:sp, :vsp</dt>
+				<dd>scinde l'écran en deux horizontalement, verticalement</dd>
+			<dt>:new, :vnew</dt>
+				<dd>créée une fenêtre vierge horizontalement, verticalement</dd>
+			<dt>CTRL+w, CTRL+W</dt>
+				<dd>active la fenêtre en dessous, au dessus</dd>
 		</dl>
 	</div>
 	<div id="quit"><h3>Quitter et enregistrer</h3>
 		<dl>
-			<dt></dt>
-				<dd></dd>
+			<dt>:q, :q!</dt>
+				<dd>quitter et confirmer, quitter et annuler les changements</dd>
+			<dt>:w</dt>
+				<dd>enregistrer</dd>
+			<dt>:wq, :x, ZZ</dt>
+				<dd>quitter et enregistrer</dd>
 		</dl>
 	</div>
 </body>
