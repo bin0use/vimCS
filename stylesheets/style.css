@@ -15,6 +15,7 @@ h3 {
 	background-color: #055010;
 	color: #bbb;
 	padding: 0.4%;
+	text-align: center;
 }
 
 dt {
@@ -26,4 +27,9 @@ dt {
 .container {
 	display: flex;
 	flex-wrap: wrap;
+}
+
+.container div {
+	margin-left: auto;
+	margin-right: auto;
 }
