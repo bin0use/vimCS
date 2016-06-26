@@ -10,3 +10,8 @@ header {
 li {
 	display: inline;
 }
+
+h3 {
+	background-color: #055010;
+	color: #bbb;
+}
