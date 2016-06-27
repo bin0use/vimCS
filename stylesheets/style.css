@@ -1,8 +1,12 @@
+/* All elements */
+/*========================*/
 * {
 	background-color: #bbb;
 	color: #055010;
 }
 
+/* Header */
+/*========================*/
 header {
 	text-align: center;
 }
@@ -16,6 +20,8 @@ nav {
 	margin-bottom: 10px;
 }
 
+/* Main content */
+/*========================*/
 h3 {
 	background-color: #055010;
 	color: #bbb;
@@ -39,6 +45,8 @@ dt {
 	margin-right: auto;
 }
 
+/* Footer */
+/*========================*/
 footer {
 	text-align: center;
 }
